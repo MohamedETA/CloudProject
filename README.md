@@ -100,6 +100,6 @@ SSH into the control node and follow the steps below:
 - Update the hosts file in /etc/ansible/ to include the the IP of the DWVA Machine 10.0.0.11 under *elk servers*
 - Run both the playbooks using the command ansible-playbook insert_beat-playbook.yml. Successfully run playbooks will look as shown below
   ![](/Users/mohamed/raw/master/AzureFiles/FilBeat-PlaybookRan.png)
-![](/Users/mohamed/raw/master/AzureFiles/MetricPlayBookRan.png)
-![](/Users/mohamed/raw/master/AzureFiles/FileBeatKibana.png)
-![](/Users/mohamed/raw/master/MetricLogsKibana.png)
+-![](/Users/mohamed/raw/master/AzureFiles/MetricPlayBookRan.png)
+-![](/Users/mohamed/raw/master/AzureFiles/FileBeatKibana.png)
+-![](/Users/mohamed/raw/master/MetricLogsKibana.png)
