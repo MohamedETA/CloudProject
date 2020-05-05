@@ -26,11 +26,10 @@ Load balancing ensures that the application will be highly redundant, in additio
 - Load balancers protect the avaiability of a service or website, ensuring that denial of service attacks will not bring it down. The advanatge of a jumpbox is that it allows you to configure an entire network in a hardend enviroment separate from the internet until it is ready to come online.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system logs.
-- _TODO: What does Filebeat watch for?_ Filesbeat watches out to changes to logs and notes any changes between old logs and a new logs
-- _TODO: What does Metricbeat record?_Metricbeat records the statistics from the system and services running on the vulnerable VMs and outputs it in whichever way you specify. 
+- Filesbeat watches out to changes to logs and notes any changes between old logs and a new logs
+- Metricbeat records the statistics from the system and services running on the vulnerable VMs and outputs it in whichever way you specify. 
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -44,8 +43,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 184.164.0.0 
-*I have masked my last IP ocets due to this being avaibale publically*
+- 184.164.0.0 *I have masked my last IP octets due to this being avaibale publically*
+
 Machines within the network can only be accessed by Jumpbox (10.0.0.4)
 
 A summary of the access policies in place can be found in the table below.
