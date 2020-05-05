@@ -6,9 +6,7 @@ The files in this repository were used to configure the network depicted below.
 ![](Diagrams/Diagram.png)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration file may be used to install only certain pieces of it, such as Filebeat.
-
-  -![](Ansible/filebeat-playbook.yml)
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration file may be used to install only certain pieces of it, such as Filebeat. ![](Ansible/filebeat-playbook.yml)
 
 
 This document contains the following details:
@@ -72,8 +70,7 @@ The playbook implements the following tasks:
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-![TODO: Update the path with the name of your screenshot of docker ps output](/Users/mohamed/raw/master/DockerPs.png)
+![](/Diagrams/DockerPs.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -99,7 +96,7 @@ SSH into the control node and follow the steps below:
 - Copy both the beats playbook.yml files and the associated configuration files to the ansible directory /etc/ansible/files
 - Update the hosts file in /etc/ansible/ to include the the IP of the DWVA Machine 10.0.0.11 under *elk servers*
 - Run both the playbooks using the command ansible-playbook insert_beat-playbook.yml. Successfully run playbooks will look as shown below
-  ![](/Users/mohamed/raw/master/AzureFiles/FilBeat-PlaybookRan.png)
--![](/Users/mohamed/raw/master/AzureFiles/MetricPlayBookRan.png)
--![](/Users/mohamed/raw/master/AzureFiles/FileBeatKibana.png)
--![](/Users/mohamed/raw/master/MetricLogsKibana.png)
+  ![](/Diagrams/FilBeat-PlaybookRan.png)
+-![](/Diagrams/MetricPlayBookRan.png)
+-![](/Diagrams/FileBeatKibana.png)
+-![](/Diagrams/MetricLogsKibana.png)
