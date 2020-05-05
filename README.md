@@ -8,7 +8,7 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration file may be used to install only certain pieces of it, such as Filebeat.
 
 
-  - _TODO: ![](/Users/mohamed/Desktop/AzureFiles/files/filebeat-playbook.yml)
+  -![](/Users/mohamed/Desktop/AzureFiles/files/filebeat-playbook.yml)
 
 
 This document contains the following details:
@@ -48,16 +48,15 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 184.164.0.0 
 *I have masked my last IP ocets due to this being avaibale publically*
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by Jumpbox (10.0.0.4)
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/                | 184.164.0.0          |
-|DVWA      | Yes:80              | Internet             |
-| Elk Server |  Yes:5601         | Internet             |
+| Name      | Publicly Accessible | Allowed IP Addresses |
+|-----------|---------------------|----------------------|
+| Jump Box  | Yes                 | 184.164.0.0          |
+| DVWA      | Yes:80              | Internet             |
+| Elk Server|  Yes:5601           | Internet             |
 
 ### Elk Configuration
 
@@ -74,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](/Users/mohamed/Desktop/AzureFiles/DockerPs.png)
+![TODO: Update the path with the name of your screenshot of docker ps output](/Users/mohamed/raw/master/DockerPs.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -93,14 +92,14 @@ SSH into the control node and follow the steps below:
 - Copy the install-elk.yml file to the ansible playbook directory /etc/ansible/roles
 - Update the hosts file in /etc/ansible/ to include the the IP of the Elk Server 10.0.0.12 under *elk servers*
 - Run the playbook using the command ansible-playbook install-elk.yml, navigate to the public IP of the Elk server using port 5601, 104.42.180.47:5601  to check that the installation worked as expected. You should see Kibana appear below as shown below
-![](/Users/mohamed/Desktop/AzureFiles/Kibana_Elk_PublicIP.png)
+![](/Users/mohamed/raw/master/Kibana_Elk_PublicIP.png)
 
 
 ## Installing Filebeat and MetricBeat
 - Copy both the beats playbook.yml files and the associated configuration files to the ansible directory /etc/ansible/files
 - Update the hosts file in /etc/ansible/ to include the the IP of the DWVA Machine 10.0.0.11 under *elk servers*
 - Run both the playbooks using the command ansible-playbook insert_beat-playbook.yml. Successfully run playbooks will look as shown below
-  ![](/Users/mohamed/Desktop/AzureFiles/FilBeat-PlaybookRan.png)
-![](/Users/mohamed/Desktop/AzureFiles/MetricPlayBookRan.png)
-![](/Users/mohamed/Desktop/AzureFiles/FileBeatKibana.png)
-![](/Users/mohamed/Desktop/AzureFiles/MetricLogsKibana.png)
+  ![](/Users/mohamed/raw/master/AzureFiles/FilBeat-PlaybookRan.png)
+![](/Users/mohamed/raw/master/AzureFiles/MetricPlayBookRan.png)
+![](/Users/mohamed/raw/master/AzureFiles/FileBeatKibana.png)
+![](/Users/mohamed/raw/master/MetricLogsKibana.png)
